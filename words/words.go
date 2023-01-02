@@ -9,7 +9,7 @@ import (
 //go:embed wordlist.txt
 var wordsData string
 
-const WordsPathVar = "SCABBLE_WORDS"
+const WordsPathVar = "SCRAPPLE_WORDS"
 
 type Word struct {
 	Text       string

@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/glesica/scabble/query"
-	"github.com/glesica/scabble/words"
+	"github.com/glesica/scrapple/query"
+	"github.com/glesica/scrapple/words"
 	"os"
 )
 
@@ -19,7 +19,7 @@ func main() {
 	} else if len(os.Args) > 1 {
 		q = query.New(os.Args[1])
 	} else {
-		fmt.Printf("usage: scabble [hand] <board>")
+		fmt.Printf("usage: scrapple [hand] <board>")
 	}
 
 	var matches []words.Word

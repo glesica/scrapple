@@ -1,6 +1,7 @@
-# Scabble
+# Scrapple
 
-Answer interesting questions that come up while playing Scrabble.
+Answer interesting questions that come up while playing Scrabble. It's
+a "crappy" way to play Scrabble.
 
 ## Building
 
@@ -15,21 +16,24 @@ By default, the wordlist should be stored in a file called `wordlist.txt`
 in the `words` directory, then the build should succeed. There is a
 trivial sample list in the root directory called `sample-wordlist.txt`.
 
-Then, you can just do `go build -o scabble main.go`.
+You can also set an environment variable, `SCRAPPLE_WORDS` to control the
+word list at runtime.
+
+Then, you can just do `go build -o scrapple main.go`.
 
 ## Usage
 
-`./scabble <hand> <board>` - find words from the given hand that can
+`./scrapple <hand> <board>` - find words from the given hand that can
 fit in the given board location
 
-`./scabble <board>` - find words that can fit in the given board
+`./scrapple <board>` - find words that can fit in the given board
 location, regardless of hand
 
 ## Examples
 
-`./scabble treg '.i...'` - reveals that you can play "tiger", among
+`./scrapple treg '.i...'` - reveals that you can play "tiger", among
 other words
 
-`./scabble '.....'` - displays all available five-letter words
+`./scrapple '.....'` - displays all available five-letter words
 
-`./scabble hello` - shows how many points "hello" is worth
+`./scrapple hello` - shows how many points "hello" is worth

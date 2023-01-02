@@ -1,7 +1,7 @@
 package query
 
 import (
-	"github.com/glesica/scabble/words"
+	"github.com/glesica/scrapple/words"
 	"strings"
 )
 
